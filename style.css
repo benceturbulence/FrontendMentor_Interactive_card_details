@@ -174,7 +174,7 @@ label {
 @media (min-width: 1000px){
 .wrapper {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .top {
@@ -191,7 +191,7 @@ label {
 }
 
 .top .container .front {
-  transform: translate(30%, -130%)
+  transform: translate(30%, -140%)
 }
 
 .top .container .back {
@@ -201,12 +201,14 @@ label {
 .bottom {
   display: flex;
   width: 100%;
-  
 }
 .bottom .container {
   padding: 0 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+}}
+
+footer {
+  text-align: center;
 }
