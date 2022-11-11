@@ -1,0 +1,212 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%,87%);
+  --dark-grayish-violet: hsl(279,6%,55%);
+  --very-dark-violet: hsl(278,68%,11%);
+  font-size: 18px
+}
+  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 16,6rem;
+  aspect-ratio: 1.586;
+  border: 1px solid black;
+  border-radius: .4rem;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 350px;
+  min-width: 300px;
+  width: 60%
+}
+
+.front {
+  background-image: url('images/bg-card-front.png');
+  padding: 1rem
+}
+
+.back {
+  background-image: url('images/bg-card-back.png');
+  position: relative
+}
+
+#cvc {
+  position: absolute;
+  top:43.5%;
+  right: 5%;
+}
+
+input:focus {
+  outline: none;
+  border-image-source: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  border-width: 1pt;
+  border-image-slice: 1;
+}
+
+.card-logo {
+  max-width: 40px;
+}
+
+
+#cardNumber {
+  margin-top: auto;
+  margin-bottom: 1.7rem;
+  font-size: 1.2rem
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: .8rem
+}
+
+.top {
+  background-image: url('images/bg-main-mobile.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative
+}
+
+
+
+.top {
+  position: relative;
+  display: flex;
+  padding: 4rem 0;
+}
+
+.front {
+  position: absolute;
+  top: 60%;
+  margin-right: auto;
+}
+
+.back {
+  margin-left: auto;
+}
+
+.bottom {
+  padding: 4rem 0
+}
+
+.expiryInputs {
+  display: flex;
+
+  gap: .5rem
+}
+input {
+  border: 1px solid var(--light-grayish-violet);
+  padding: .5rem;
+  border-radius: .3rem;
+  width: 100%
+}
+
+input::placeholder,
+input {
+  font-size: .9rem;
+}
+
+input::placeholder {
+  color: var(--light-grayish-violet)
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .7rem 0 .4rem
+}
+.expiryInputs input {
+  display: block;
+  width: 50%
+}
+
+#cvcInput {
+  width: 100%;
+}
+
+.succesfield {
+  text-align: center;
+  padding: 2rem
+}
+
+.succesField p {
+  margin-top: 1.3rem;
+  text-align: center;
+}
+.succesField img {
+  display: block;
+  margin: 0 auto
+}
+
+.btn {
+  margin-top: 2rem;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  border-radius: .3rem;
+  padding: .7rem 1rem;
+  background-color: black;
+  font-family: inherit
+}
+
+@media (min-width: 1000px){
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.top {
+  padding: 2rem
+}
+.container {
+  width: 90%
+}
+
+.top .container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top .container .front {
+  transform: translate(30%, -130%)
+}
+
+.top .container .back {
+  transform: translate(50%, 60%)
+}
+
+.bottom {
+  display: flex;
+  width: 100%;
+  
+}
+.bottom .container {
+  padding: 0 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
